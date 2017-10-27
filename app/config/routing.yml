@@ -1,6 +1,6 @@
 cerveceria:
     resource: "@cerveceriaBundle/Resources/config/routing.yml"
-    prefix:   /cerveceria
+    prefix:   /
 
 app:
     resource: '@AppBundle/Controller/'

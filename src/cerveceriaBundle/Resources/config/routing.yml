@@ -1,3 +1,6 @@
 cerveceria_homepage:
     path:     /
     defaults: { _controller: cerveceriaBundle:Default:index }
+cerveceria_all:
+    path:     /c/{id}
+    defaults: { _controller: cerveceriaBundle:cerveza:all }
