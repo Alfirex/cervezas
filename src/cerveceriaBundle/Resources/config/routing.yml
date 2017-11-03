@@ -4,3 +4,9 @@ cerveceria_homepage:
 cerveceria_all:
     path:     /c/{id}
     defaults: { _controller: cerveceriaBundle:cerveza:all }
+cerveceria_Crear:
+    path:     /crear/{nombre}/{pais}
+    defaults: { _controller: cerveceriaBundle:cerveza:crearCerveza }
+cerveceria_Actualizar:
+    path:     /actualizar/{id}
+    defaults: { _controller: cerveceriaBundle:cerveza:update }
