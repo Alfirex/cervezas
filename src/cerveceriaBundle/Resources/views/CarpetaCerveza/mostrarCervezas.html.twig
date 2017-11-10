@@ -2,14 +2,15 @@
 {% block body %}
 <div class="w3-container">
   <h2>Cervezas</h2>
-  {% for cerveza in IdCerveza %}
-    <div class="w3-card-4" style="width:50% " >
+  {% for cerveza in TablaCervezas %}
+    <div class="w3-card-4" style="width:50%  float:left;" >
       <img src="{{ asset("img/{{ cerveza.foto }}") }}" alt="{{ cerveza.nombre }}" width="50%" height="300px;" >
       <div class="w3-container w3-center">
         <p>Nombre:{{ cerveza.nombre }}</p>
-        <p>Pais:{{ cerveza.nombre }}</p>
-        <p>Poblacion:{{ cerveza.nombre }}</p>
+        <p>Pais:{{ cerveza.pais }}</p>
+        <p>Poblacion:{{ cerveza.poblacion }}</p>
       </div>
+      <a href="{{ path('cerveceria_ActualizarFormulario', {'id': cerveza.id  }) }}" class="btn btn-primary">Actualizar</a>
     </div>
   {% endfor %}
 </div>

@@ -1,18 +1,22 @@
 {% extends '::base.html.twig' %}
 {% block body %}
-  {% for fila in TablaCervezas %}
-    <div class="w3-card-4" style="width:50% " >
-      <img src="{{ asset( fila.foto ) }}" alt="{{ fila.nombre }}" width="50%" height="300px;" >
-      <div class="w3-container w3-center">
-        <p>Nombre:{{ fila.nombre }}</p>
-        <p>Pais:{{ fila.pais }}</p>
-        <p>Poblacion:{{ fila.poblacion }}</p>
-        <p>Tipo:{{ fila.tipo }}</p>
-        <p>Importacion{{ fila.importacion }}</p>
-        <p>Tamaño: {{ fila.tamano }}</p>
-        <p>Fehca de Almacenamiento:{{ fila.fechaAlmacen|date('Y-m-d') }}</p>
-        <p> cantidad{{ fila.cantidad }}</p>
+  <section>
+    <article class="container" style="background-color:rgb(238, 238, 238);">
+    {% for fila in TablaCervezas %}
+      <div class="w3-card-4" style="width:50% " >
+        <img src="{{ asset( fila.foto ) }}" alt="{{ fila.nombre }}" width="50%" height="300px;" >
+        <div class="w3-container w3-center">
+          <p>Nombre:{{ fila.nombre }}</p>
+          <p>Pais:{{ fila.pais }}</p>
+          <p>Poblacion:{{ fila.poblacion }}</p>
+          <p>Tipo:{{ fila.tipo }}</p>
+          <p>Importacion{{ fila.importacion }}</p>
+          <p>Tamaño: {{ fila.tamano }}</p>
+          <p>Fehca de Almacenamiento:{{ fila.fechaAlmacen|date('Y-m-d') }}</p>
+          <p> cantidad{{ fila.cantidad }}</p>
+        </div>
       </div>
-    </div>
   {% endfor %}
+  </article>
+</section>
 {% endblock %}

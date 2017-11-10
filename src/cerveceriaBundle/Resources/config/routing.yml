@@ -1,12 +1,21 @@
 cerveceria_homepage:
     path:     /
     defaults: { _controller: cerveceriaBundle:Default:index }
-cerveceria_all:
-    path:     /c/{id}
-    defaults: { _controller: cerveceriaBundle:cerveza:all }
+cerveceria_mostrarCerveza:
+    path:     /mostrar
+    defaults: { _controller: cerveceriaBundle:cerveza:mostrarCerveza }
+cerveceria_id:
+    path:     /id/{id}
+    defaults: { _controller: cerveceriaBundle:cerveza:id }
 cerveceria_Crear:
     path:     /crear/{nombre}/{pais}
     defaults: { _controller: cerveceriaBundle:cerveza:crearCerveza }
 cerveceria_Actualizar:
     path:     /actualizar/{id}
     defaults: { _controller: cerveceriaBundle:cerveza:update }
+cerveceria_InsertarFormulario:
+    path:     /insertarCerveza
+    defaults: { _controller: cerveceriaBundle:cerveza:insertarFormulario }
+cerveceria_ActualizarFormulario:
+    path:     /modificarCerveza/{id}
+    defaults: { _controller: cerveceriaBundle:cerveza:actualizarFormulario }

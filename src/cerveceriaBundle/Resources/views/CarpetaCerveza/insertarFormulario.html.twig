@@ -1,0 +1,14 @@
+{% extends '::base.html.twig' %}
+{% block body %}
+<section>
+  <article class="container" style="background-color:rgb(238, 238, 238);">
+    <fieldset>
+      <legend>Insertar Cerveza:</legend>
+      {{ form_start(form) }}
+      {{ form_widget(form) }}
+      {{ form_end(form) }}
+    </fieldset>
+    <br><br>
+  </article>
+</section>
+{% endblock %}

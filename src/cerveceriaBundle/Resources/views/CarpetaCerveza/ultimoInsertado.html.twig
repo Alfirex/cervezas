@@ -1,0 +1,18 @@
+{% extends '::base.html.twig' %}
+{% block body %}
+
+    <div class="w3-card-4" style="width:50% " >
+      <img src="{{ asset( TablaCervezas.foto ) }}" alt="{{ TablaCervezas.nombre }}" width="50%" height="300px;" >
+      <div class="w3-container w3-center">
+        <p>Nombre:{{ TablaCervezas.nombre }}</p>
+        <p>Pais:{{ TablaCervezas.pais }}</p>
+        <p>Poblacion:{{ TablaCervezas.poblacion }}</p>
+        <p>Tipo:{{ TablaCervezas.tipo }}</p>
+        <p>Importacion{{ TablaCervezas.importacion }}</p>
+        <p>Tamaño: {{ TablaCervezas.tamano }}</p>
+        <p>Fehca de Almacenamiento:{{ TablaCervezas.fechaAlmacen|date('Y-m-d') }}</p>
+        <p> cantidad{{ TablaCervezas.cantidad }}</p>
+      </div>
+    </div>
+      <a href="{{ path('cerveceria_InsertarFormulario') }}" class="btn btn-primary">Volver a Insertar</a>
+{% endblock %}

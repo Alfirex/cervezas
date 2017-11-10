@@ -1,15 +1,18 @@
 {% extends '::base.html.twig' %}
 {% block body %}
-<div class="w3-container">
-  <h2>Cervezas</h2>
+<section>
+  <article class="container" style="background-color:rgb(238, 238, 238);">
+    <div class="w3-container">
+      <h2>Cervezas</h2>
 
-  <div class="w3-card-4" style="width:50% " >
-    <img src="{{ asset('img/imagen.jpg') }}" alt="Norway" width="50%" height="300px;" >
-    <div class="w3-container w3-center">
-      <p>San miguel</p>
+      <div class="w3-card-4" style="width:50% " >
+        <img src="{{ asset('img/imagen.jpg') }}" alt="Norway" width="50%" height="300px;" >
+        <div class="w3-container w3-center">
+          <p>San miguel</p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<ul id="cervezas">
-  
+    <ul id="cervezas">
+  </article>
+</section>
 {% endblock %}
